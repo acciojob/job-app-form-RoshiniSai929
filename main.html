@@ -4,16 +4,16 @@
 	<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-	<form action method="get">
+	<form action method="post">
 	<label for = "Name">Name:</label>
 	<input type = "Name" id="Name" required>
 	<br>
 	<br>
 	<label for = "mail">Email:</label>
-	<input type="Email" id="mail" required><br><br>
+	<input type="Email" id="mail" name="mail" required><br><br>
 	<label for = "gender">Gender:</label>
-	<input type="radio" id="gender" name="gender">Male
-	<input type="radio" id="gender" name="gender">Female<br><br>
+	<input type="radio" id="gender" name="gender" required>Male
+	<input type="radio" id="gender" name="gender" required>Female<br><br>
 	<label type="laptop">Laptop Brands:</label>
 	<select name="laptop">
 		<option value="laptop">Apple</option>
@@ -21,11 +21,11 @@
 		<option value="laptop">Hp</option>
 	</select><br><br>
 	<label for="age">Age</label>
-	<input type="number"><br><br>
+	<input type="number" id="age" name="age" required><br><br>
 	<label for="dob">DOB</label>
-	<input type="date"><br><br>
+	<input type="date" name="dob" id="dob" required><br><br>
 	<label for="password">password</label>
-	<input type="password"><br><br>
+	<input type="password" id="password" required><br><br>
 	<input type="submit">
 	</form>
 </body>
